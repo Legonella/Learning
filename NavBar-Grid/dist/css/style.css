@@ -1,0 +1,50 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Roboto', sans-serif;
+}
+
+.grid-conteiner-header {
+	max-width: 100%;
+	background-color: #000000;
+
+}
+
+.nav-item {
+	display: grid;
+	grid-template-columns: auto auto auto auto auto;
+	justify-content: space-around;
+}
+
+.logo{
+	width: 80%;
+	margin-top: 5%;
+}
+
+.nav-link {
+	margin: 25px 0;
+	font-size: 20px;
+
+	text-decoration: none;
+	font-weight: inherit;
+	color: #ffffff;
+}
+
+.nav-link:hover {
+	text-shadow: 1px 1px 5px #427388;
+}
+
+#btn-buy {
+	max-width: 100%;
+	height: 40%;
+	margin: 20px 0 0 50px;
+	padding: 2px 35px;
+
+	border: 2px solid #04DDDD;
+	border-radius: 61px;
+}
+
+#btn-buy:hover {
+	background-color: #04DDDD;
+}
