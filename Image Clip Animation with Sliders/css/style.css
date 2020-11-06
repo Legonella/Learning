@@ -9,7 +9,12 @@ body {
 	justify-content: center;
 	align-items: center;
 	min-height: 100vh;
-	background: #AEB6BF;
+	background: linear-gradient(
+		90deg,
+		rgba(41, 1, 219, 1) 0%,
+		rgba(2, 29, 158, 1) 53%,
+		rgba(0, 155, 255, 1) 100%
+	);
 }
 
 .wrapper {
@@ -17,6 +22,8 @@ body {
 	height: 400px;
 	position: relative;
 }
+
+
 
 .wrapper .img {
 	width: 100%;
@@ -64,8 +71,8 @@ body {
 }
 
 .sliders label {
-	width: 15px;
-	height: 15px;
+	width: 13px;
+	height: 13px;
 	border: 2px solid #273746;
 	margin: 0 3px;
 	border-radius: 50%;
@@ -73,8 +80,17 @@ body {
 	transition: all 0.3s ease;
 }
 
+#one:checked ~ .sliders label.one,
+#two:checked ~ .sliders label.two,
+#three:checked ~ .sliders label.three,
+#four:checked ~ .sliders label.four {
+	width: 35px;
+	border-radius: 15px;
+	background: #273746;
+}
+
 .sliders label:hover {
-	background: #3498DB;
+	background: #3498db;
 }
 
 .wrapper input[type="radio"] {
